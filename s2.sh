@@ -21,4 +21,4 @@ cd
 #ruta absoluta: es la ruta completa desde el directorio \
 #ruta relativa: no tiene toda la ruta completa 
 #lista archivos y directorios en el directorio actual
-ls 
+ls
