@@ -59,6 +59,6 @@ ls //workspaces/intro-unix-may-2025-online/padre/
 # mv move tambien sirve para renombrar archivos
 cp -r padre destino/
 
-mv destino/padre/HIJO
+mv destino/padre/HIJO .
 
 ls destino/padre
