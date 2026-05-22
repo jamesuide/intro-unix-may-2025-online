@@ -29,9 +29,9 @@ ls -a
 # cambio de directorio al directorio raiz de linux
 cd /
 # cambio de directorio al directorio de binario de linux
-# ruta absoluta
+# ruta absoluta Es la dirección completa desde la raíz del sistema (/).
 cd /bin
-#ruta relativa
+#ruta relativa No empieza con /
 cd bin
 #Este comando sirve para instalar tu programa en el sistema para 
 #que pueda ejecutarlo desde cualquier lugar de la terminal simplemente 
@@ -40,3 +40,4 @@ sudo cp /workspaces/intro-unix-may-2025-online/hola_binario /bin/hola_binario
 #(Make Directory): Es el comando nativo de Unix/Linux que le ordena al sistema operativo "crear un directorio"
 #nuevo_directorio: Es el nombre que va a tener la carpeta que estás creando.
 mkdir nuevo_directorio
+
