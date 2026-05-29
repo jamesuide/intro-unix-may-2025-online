@@ -24,8 +24,8 @@ ls --help
 man ls
 #ruta absoluta
 cd /workspaces/intro-unix-may-2025-online/padre
-cd /
 
+cd /
 #
 cd workspaces
 
@@ -55,7 +55,7 @@ rm nuevo_archivo
 #
 cp s3.sh padre/s3.sh
 
-ls //workspaces/intro-unix-may-2025-online/padre/
+ls /workspaces/intro-unix-may-2025-online/padre/
 # mv move tambien sirve para renombrar archivos
 cp -r padre destino/
 
