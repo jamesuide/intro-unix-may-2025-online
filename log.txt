@@ -12,10 +12,23 @@ ps | grep -i tty
 grep -v "35.237.4.214" log.txt
 #Muestra únicamente la IP encontrada, no la línea completa.
 grep -o "35.237.4.214" log.txt
-#
+#Muestra la primera columna de cada línea.
 awk '{print $1}' log.txt
-#
+#Muestra las tres primeras columnas de cada línea.
 awk '{print $1,$2,$3}' log.txt
+#Muestra la primera y la última columna de cada línea.
+awk '{print $1,$NF}' log.txt
+#Toma el archivo CSV y usa coma como separador. Muestra la primera columna.
+awk -F',' '{print $1}' test.csv
+#Muestra las primeras 10 líneas del archivo.
+head log.txt
+#Muestra las últimas 10 líneas del archivo.
+tail log.txt
+#Muestra las líneas 1 a 9 del archivo.
+awk 'NR < 10' log.txt
+#Reemplaza todas las apariciones de Mozilla por Godzilla en cada línea del archivo log.txt.
+sed 's/Mozilla/Godzilla/g' log.txt
+ 
 
 
 13.66.139.0 - - [19/Dec/2020:13:57:26 +0100] "GET /index.php?option=com_phocagallery&view=category&id=1:almhuette-raith&Itemid=53 HTTP/1.1" 200 32653 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" "-"
