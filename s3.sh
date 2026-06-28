@@ -1,64 +1,92 @@
-#print working directory
-#/workspaces/intro-unix-may-2025-online
+# Muestra la ruta actual del directorio.
 pwd
-#list
-#LICENSE    hola.c        nuevo_directorio  s2.sh
-#README.md  hola_binario  s1.sh             s3.sh
-ls 
-#make directory
+
+# Lista los archivos y directorios.
+ls
+
+# Crea un directorio llamado "padre".
 mkdir padre
-#change directory padre
+
+# Entra al directorio "padre".
 cd padre
-#muestra todos los archivos (incluso los ocultos) 
-#los directorios siempre quedan resaltados
+
+# Muestra todos los archivos, incluidos los ocultos.
 ls --all
-#me muevo al directorio que contiene al directorio actual
+
+# Regresa al directorio anterior.
 cd ..
-#mi directorio actual es el .
-# opción extendida y abreviada :
+
+# Muestra todos los archivos con la opción larga.
 ls --all
+
+# Muestra todos los archivos con la opción abreviada.
 ls -a
-# con el comando da informacion de como usar un comando
+
+# Muestra la ayuda del comando ls.
 ls --help
-# Sirve para abrir la documentación completa de un comando
+
+# Abre el manual completo del comando ls.
 man ls
-#ruta absoluta
+
+# Cambia al directorio usando una ruta absoluta.
 cd /workspaces/intro-unix-may-2025-online/padre
 
+# Va al directorio raíz.
 cd /
-#
+
+# Entra al directorio workspaces.
 cd workspaces
 
+# Entra al directorio padre.
 cd padre
 
+# Crea un archivo vacío llamado hijo.
 touch hijo
 
+# Crea un archivo vacío llamado HIJO.
 touch HIJO
 
+# Crea un directorio llamado PADRE.
 mkdir PADRE
 
-Hola_"chao"
-# variable normal
+# Asigna el valor "chao" a la variable Hola_.
+Hola_="chao"
+
+# Muestra el valor de la variable Hola_.
 echo $Hola_
-# variable de entorno
+
+# Muestra la ruta del directorio HOME.
 echo $HOME
+
+# Imprime un mensaje con salto de línea.
 printf "mensaje\n"
 
+# Muestra un mensaje en pantalla.
 echo "mensaje"
-# Desde cualquier ubicacion me llevan al directorio home
-cd~
-cd 
-# remove directory (elimina el directorio PADRE)
+
+# Va al directorio personal del usuario.
+cd ~
+
+# También va al directorio personal.
+cd
+
+# Elimina el directorio PADRE si está vacío.
 rmdir PADRE/
-#remove elimina archivos
+
+# Elimina un archivo llamado nuevo_archivo.
 rm nuevo_archivo
-#
+
+# Copia s3.sh al directorio padre.
 cp s3.sh padre/s3.sh
 
+# Lista el contenido del directorio padre.
 ls /workspaces/intro-unix-may-2025-online/padre/
-# mv move tambien sirve para renombrar archivos
+
+# Copia recursivamente el directorio padre a destino.
 cp -r padre destino/
 
+# Mueve HIJO al directorio actual.
 mv destino/padre/HIJO .
 
+# Lista el contenido de destino/padre.
 ls destino/padre
